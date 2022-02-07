@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    min-height: 600px;
+    min-width: 600px;
+    max-width: 600px;
+    max-height: 600px;
+    flex-wrap: wrap;
+    border: 1px gray solid;
+}
+
+.grid-element  {
+    flex: 1 0 auto;
+}
+
+.btn-container {
+    border: black solid 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+#slider {
+    
+}
