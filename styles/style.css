@@ -13,10 +13,10 @@ body {
     max-height: 600px;
     flex-wrap: wrap;
     border: 1px gray solid;
+    user-select: none;
 }
 
 .grid-element  {
-    flex: 1 0 auto;
     user-select: none;
 }
 
@@ -26,10 +26,23 @@ body {
     flex-direction: column;
 }
 
-#slider {
-    
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+  
+input[type="color"]::-webkit-color-swatch {
+    border: none;border-radius:50%;
 }
 
-#debug {
-    
+#picker {
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+button {
+    background-color: gray;
+    border: black 2px solid;
 }
