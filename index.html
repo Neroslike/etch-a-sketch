@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +11,20 @@
     <title>Etch a sketch!</title>
 </head>
 <body>
+    <h1>Etch-a-sketch</h1>
+    <div class="content">
     <div class="btn-container">
         <input type="color" name="Colorpicker" id="picker" value="black">
-        <button id="color">Color</button>
-        <button id="rainbow">Rainbow</button>
-        <button id="eraser">Eraser</button>
+        <button class="mode" id="color">Color</button>
+        <button class="mode" id="rainbow">Rainbow</button>
+        <button class="mode" id="eraser">Eraser</button>
+        <button id="showGrid">Show Grid</button>
         <button id="clear">Clear</button>
         <input type="range" min="1" max="100" value="16" id="slider">
         <span id="sizing"></span>
     </div>
     <div class="container">
-
+    </div>
     </div>
     <script src="script/script.js"></script>
 </body>

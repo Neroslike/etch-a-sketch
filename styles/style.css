@@ -1,8 +1,11 @@
 body {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
+    background-color: #e1f8dc;
+    
 }
 
 .container {
@@ -14,16 +17,25 @@ body {
     flex-wrap: wrap;
     border: 1px gray solid;
     user-select: none;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.content {
+    display: flex;
+    column-gap: 5%;
+    
 }
 
 .grid-element  {
     user-select: none;
+    background: white;
 }
 
 .btn-container {
-    border: black solid 2px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 input[type="color"]::-webkit-color-swatch-wrapper {
@@ -38,11 +50,38 @@ input[type="color"]::-webkit-color-swatch {
     padding: 0;
     border: none;
     border-radius: 50%;
-    height: 40px;
-    width: 40px;
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    margin-bottom: 20px;
 }
 
 button {
-    background-color: gray;
-    border: black 2px solid;
+    background: none;
+    border: #202525 2px solid;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+button:hover {
+    transform: scale(1.10);
+}
+
+button.active{
+    background-color: #515656;
+    color: white;
+}
+
+.showGrid {
+    outline:1px solid black;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 86px;
+    
 }
